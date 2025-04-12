@@ -1,0 +1,107 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 214 100% 30%; /* Pantone 295 (Dark Blue) - HSL approximation */
+    --foreground: 0 0% 98%; /* White */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 3.9%; /* Black */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 3.9%; /* Black */
+    --primary: 48 100% 50%; /* Pantone 872 (Gold) - HSL approximation */
+    --primary-foreground: 0 0% 98%; /* White */
+    --secondary: 45 100% 50%; /* Pantone 124 (Yellow) - HSL approximation */
+    --secondary-foreground: 0 0% 9%; /* Black */
+    --muted: 0 0% 96.1%; /* Light Gray */
+    --muted-foreground: 0 0% 45.1%; /* Medium Gray */
+    --accent:  0 0% 45.1%; /* Pantone 877 (Silver) - HSL approximation */
+    --accent-foreground: 0 0% 3.9%; /* Black */
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 0 0% 98%; /* White */
+    --border: 0 0% 89.8%; /* Light Gray */
+    --input: 0 0% 89.8%; /* Light Gray */
+    --ring: 0 0% 3.9%; /* Black */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 0 0% 3.9%; /* Black */
+    --foreground: 0 0% 98%; /* White */
+    --card: 0 0% 3.9%; /* Black */
+    --card-foreground: 0 0% 98%; /* White */
+    --popover: 0 0% 3.9%; /* Black */
+    --popover-foreground: 0 0% 98%; /* White */
+    --primary: 48 100% 50%; /* Pantone 872 (Gold) - HSL approximation */
+    --primary-foreground: 0 0% 9%; /* Black */
+    --secondary: 45 100% 50%; /* Pantone 124 (Yellow) - HSL approximation */
+    --secondary-foreground: 0 0% 98%; /* White */
+    --muted: 0 0% 14.9%; /* Dark Gray */
+    --muted-foreground: 0 0% 63.9%; /* Medium Gray */
+    --accent: 0 0% 63.9%; /* Pantone 877 (Silver) - HSL approximation */
+    --accent-foreground: 0 0% 3.9%; /* Black */
+    --destructive: 0 62.8% 30.6%; /* Dark Red */
+    --destructive-foreground: 0 0% 98%; /* White */
+    --border: 0 0% 14.9%; /* Dark Gray */
+    --input: 0 0% 14.9%; /* Dark Gray */
+    --ring: 0 0% 83.1%; /* Light Gray */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Animation classes (example) */
+@keyframes subtle-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subtle-slide-up {
+  animation: subtle-slide-up 0.3s ease-out;
+}
+
+
